@@ -307,5 +307,42 @@ Another big break, but this time because I went to Undercity. 10/10 experience l
 
 > *time spent: 2hrs*
 
+## 2025/08/05
+So this is what $100 of parts looks like:
+
+<img width="720" height="540" alt="image" src="https://github.com/user-attachments/assets/bf64eb83-279a-430d-b1f1-9d40b39f5f62" />
+
+All of my parts arrived while I was away, so today was an assembly and soldering marathon. I didn't entirely realize how small some of the parts I had to solder were until I saw them. Tiny SMD components never bring joy to my soul. Luckily I only actually had to deal with three of them. 
+Getting off to a great start I broke a pin off of my large SD card reader while opening it's package, which turned into a 30 minute repair attempt. before/after:
+
+<img width="540" height="720" alt="image" src="https://github.com/user-attachments/assets/a9a50dc4-2f09-45e4-8f9a-039024026639" />
+<img width="405" height="720" alt="image" src="https://github.com/user-attachments/assets/30bf70db-411f-403e-b874-2c1a69337664" />.
+
+Besides that repair ( and a bit of a mishap where I put on the power switch backwards ) soldering went suprisingly quickly, especially with the microSD card adapter which I was expecting to be about five times more complicated than it actually was. 
+
+Not much else to say on soldering, exept that it took almost all day. ( the front panel connector kept breaking ok? ). the only connection I have left is the front panel connector, because I realized my header stacking strategy doesn't actually work. 
+
+Actually putting stuff together now. Everything fit in the case really well, although I did have to cull one or two of the mounting pegs, so I'll update the models to reflect that. The LCD mounting strategy I ended up choosing turned out to be just shoving a ton of jumper wires into the case ( good thing I left a bunch of empty space ). I still need to paint the case, but at this point im certain that this will actually work, once I actually get the fricking firmware working. here's some assembly pics:
+
+![IMG_0558](https://github.com/user-attachments/assets/313b8510-5c69-4a4d-9164-fbe549c4bc37)
+![IMG_0560](https://github.com/user-attachments/assets/d92e78f0-10ae-4493-8728-10a89e137a61)
+
+> *time spent: 6.5hrs*
+
+## 2025/08/06
+
+Paint time!
+
+I did a bit of research on different ways to finish 3d prints, and it seems like the best way to go about this is a few coats of sandable primer, then some spraypaint. Not much more to it. 
+
+<img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/3a915886-0996-4ebc-af0d-3fbd9acf5df2" />
+
+I used the primer color as the base grey/metal of the terminal ( brushed with some metallic paint ). Some painted lines, keys, and other stuff later,this is the final result, 100% assembled:
+
+
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/78d0cea0-43a2-409a-93f4-6a42d79e3b33" /> <img width="400" alt="IMG_0613" src="https://github.com/user-attachments/assets/66b3ea4b-f6c9-4abb-b9f4-8388ba2581de" />
+
+> *time spent: 5hrs*
+
 
 
