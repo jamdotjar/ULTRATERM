@@ -1916,7 +1916,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "U3"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1924,15 +1924,15 @@
 					)
 				)
 			)
-			(property "Value" ""
-				(at 0 0 0)
+			(property "Value" "~"
+				(at 0 13.97 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "RF_Module:TINYPICO"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2289,7 +2289,7 @@
 							)
 						)
 					)
-					(number "8"
+					(number "18"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4087,6 +4087,28 @@
 			)
 		)
 	)
+	(global_label "b1"
+		(shape input)
+		(at 66.04 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1e31d848-cc23-4319-9bd0-79cfc87a1406")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 71.3837 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LED_R"
 		(shape input)
 		(at 58.42 88.9 0)
@@ -4721,28 +4743,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "b1"
-		(shape input)
-		(at 66.04 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ee0ae0a2-f215-419e-9714-d55804b1dc92")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.3837 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -6454,7 +6454,7 @@
 		(pin "9"
 			(uuid "b0937377-48a0-46db-a2b8-23e33f5a36ae")
 		)
-		(pin "8"
+		(pin "18"
 			(uuid "f53b92b9-9a73-4381-9e9f-063b8385ca88")
 		)
 		(pin "3"
