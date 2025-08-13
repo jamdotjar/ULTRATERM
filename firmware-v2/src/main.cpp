@@ -25,16 +25,12 @@
 #include "a2dp_source.h"
 #include "SD.h"
 #include "FS.h"
-#include "TFT_eSPI.h" 
 #include "SPI.h"
-
-
+// Digital I/O used
 #define SD_CS         26
 #define SPI_MOSI      18
 #define SPI_MISO      19
 #define SPI_SCK       22
-
-
 
 char BT_SINK_NAME[]   = "HD 450BT"; // sink devicename
 char BT_SINK_PIN[]    = "0000";             // sink pincode
@@ -47,9 +43,6 @@ uint32_t        bitRate;
 uint8_t         channels;
 uint8_t         bitsPerSample=16;
 uint32_t        posDataSection;
-
-
-TFT_eSPI tft = TFT_eSPI();
 
 
 //---------------------------------------------PARSE WAV----------------------------------------------------------------
@@ -146,11 +139,9 @@ bool parseWAV(fs::FS &fs, String path){
 //---------------------------------------------SETUP--------------------------------------------------------------------
 void setup(){
     Serial.begin(115200);
-    tft.init();
-
     SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI);
     SD.begin(SD_CS);
-    parseWAV(SD, "/cola.wav");
+    parseWAV(SD, "/guts.wav");
     a2dp_source_init(BT_SINK_NAME, BT_SINK_PIN);
 }
 //----------------------------------------------LOOP--------------------------------------------------------------------
