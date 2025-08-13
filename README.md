@@ -23,9 +23,8 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 
 ## Gallery
 
-
+![Assebled on tan bg](gallery/builtbg.png)
 ![ULTRATERM back IO render product render on black background](gallery/bl-back.png)
-![ULTRATERM cutaway](gallery/cutaway.PNG)
 ![ULTRATERM product render in ULTRAKILL enviroment](gallery/header.PNG)
 ![ULTRATERM left angle product render on black background](gallery/bl-ang-left.png)
 *more in [./gallery](gallery)*
@@ -69,8 +68,8 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 |Total                                       |1       |95.21|          |                                                                  |                                                                                                          |
 ## Assembly
 
-*we'll see how this goes once I get the parts in*
-
+Putting this together is relatively simple, the hardest part is connecting the screen and front panel before putting the two halves together. Assuming you aren't too rough, the mounting holes for the screen and button panels should be enough to hold them. A small dab of superglue can help make sure they don't come out with repeated use. I'd advise dupont cables or soemthing similar to connect the screen, as long as it has a lot of slack it should be fine ( the case has a lot of empty space to wind the cables into )
+![Assebled halfway](gallery/assembly.jpeg)
 ## LICENSE
 
 This project uses the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) for all firmware, documentation, renders, and other writing. Hardware including all Case and PCB designs, is licensed under the [CERN-OHL-W v2](https://ohwr.org/cern_ohl_w_v2.txt)
