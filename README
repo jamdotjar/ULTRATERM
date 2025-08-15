@@ -17,9 +17,13 @@ The terminal sits at around 125mm tall, with a 57x104mm footprint. It was design
 The case is designed to be entirely 3D printable, and assembled without adhesive or fasteners.
 While the terminal isn't a perfect replica, it's decently close. ( for example, there's none of the wires near the top, but there is a magnetic attachment point so I *can* add them )
 
-This project was made as mostly a fun intro to custom hardware. I've made keyboards before, but design wise those are fairly simplec ( this isn't much more complicated ). I decided to shape it after the ULTRAKILL Cybergrind terminal because that's the one that handles  cybergrind music ingame, so I thought that would be a cool part to try and recreate. Even though it isn't *the* classic terminal, its form factor is also a *lot* more forgiving to fit a screen and PCB and stuff into when compared to the shop terminals, which also don't have as many good options for physical interface. 
+This project was made as mostly a fun intro to custom hardware. I've made keyboards before, but design wise those are fairly simplec ( this isn't much more complicated ). I decided to model it after the ULTRAKILL Cybergrind terminal because that's the one that handles  cybergrind music ingame ( and because its form factor is also a *lot* more forgiving to fit everything into )
 
-If you happen to make your own, I'd suggest either 3d-printing it in blue for minimum effort, or printing it in grey, painting it, then scuffing the paint to give it the worn look it has in-game. 
+If you happen to try and make your own, I'd suggest either 3d-printing it in blue for minimum effort, or printing it in grey, painting it, then scuffing the paint to give it the worn look it has in-game. ( also check out the assembly section )
+
+I'm still hacking away at getting everything working, but here's a video demo of my progress so far:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mtm72WqqxwA?si=b4hcNI8-wLqygqw2" title="YouTube video player" frameborder="0" allow="encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Gallery
 
@@ -70,6 +74,7 @@ If you happen to make your own, I'd suggest either 3d-printing it in blue for mi
 
 Putting this together is relatively simple, the hardest part is connecting the screen and front panel before putting the two halves together. Assuming you aren't too rough, the mounting holes for the screen and button panels should be enough to hold them. A small dab of superglue can help make sure they don't come out with repeated use. I'd advise dupont cables or soemthing similar to connect the screen, as long as it has a lot of slack it should be fine ( the case has a lot of empty space to wind the cables into )
 ![Assebled halfway](gallery/assembly.jpeg)
+
 ## LICENSE
 
 This project uses the [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/) for all firmware, documentation, renders, and other writing. Hardware including all Case and PCB designs, is licensed under the [CERN-OHL-W v2](https://ohwr.org/cern_ohl_w_v2.txt)
