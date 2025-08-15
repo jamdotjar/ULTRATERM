@@ -23,7 +23,7 @@ If you happen to try and make your own, I'd suggest either 3d-printing it in blu
 
 I'm still hacking away at getting everything working, but here's a video demo of my progress so far:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Mtm72WqqxwA?si=b4hcNI8-wLqygqw2" title="YouTube video player" frameborder="0" allow="encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[![Video](https://img.youtube.com/vi/Mtm72WqqxwA/maxresdefault.jpg)](https://www.youtube.com/watch?v=Mtm72WqqxwA)
 
 ## Gallery
 
