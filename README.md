@@ -3,7 +3,7 @@
 
 ULTRATERM is a miniature replica of an ULTRAKILL settings terminal ( like the one used in cybergrind ), that acts as a bluetooth audio player.
 
-> ***NOTE**: this project is a WIP, check out the [journal](JOURNAL.md) for progress updates! Right now I'm:* `waiting for parts`
+> ***NOTE**: This project is built, but there's still work to do. Check out the [journal](JOURNAL.md) for progress updates! Right now I'm:* `bashing together some code`
 
 ## Design
 
