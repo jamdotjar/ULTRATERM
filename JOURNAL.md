@@ -337,12 +337,45 @@ I did a bit of research on different ways to finish 3d prints, and it seems like
 
 <img width="720" height="405" alt="image" src="https://github.com/user-attachments/assets/3a915886-0996-4ebc-af0d-3fbd9acf5df2" />
 
-I used the primer color as the base grey/metal of the terminal ( brushed with some metallic paint ). Some painted lines, keys, and other stuff later,this is the final result, 100% assembled:
-
+I used the primer color as the base grey/metal of the terminal ( brushed with some metallic paint ). Some painted lines, keys, and other stuff later,this is the final result, 100% assembled
 
 <img width="400"  alt="image" src="https://github.com/user-attachments/assets/78d0cea0-43a2-409a-93f4-6a42d79e3b33" /> <img width="400" alt="IMG_0613" src="https://github.com/user-attachments/assets/66b3ea4b-f6c9-4abb-b9f4-8388ba2581de" />
 
 > *time spent: 5hrs*
+
+## 2025/08/08-2025/08/15
+( I forgot to add timestamps or commit so now I can't seperate the entries, according to wakatime this whole block was like 15 hrs of total work )
+
+Holy firmware batman!
+
+The first version of my firmware was based on a lot of (mostly incorrect) assumptions, so flashing it into the device turned into a fun litle excercise in everything going wrong all at once. Considering that every initialization step was failing in isolation and that together it was bascically a rats nest of task calls,  I've decided that in the interest of actually getting it working a rewrite is in order, following this feature priority:
+- bluetooth ( because otherwise I have no way of telling if the music playback part works )
+- SD card reading/playlist generation
+- buttons for playback controls ( skip, pause )
+- Screen/status UI
+- Other fancy (mostly style) based additions like exposing the filesystem over USB or smth.
+
+A couple hours into v2 of the firmware ( haha, getit, v2 ), and bluetooth is working ( it pairs, heaphones recognise ). The on-chip flash is a pain to store files in tho so I'll have to wait for the SD card stuff to get working before I can test sound. 
+SD card is formatted properly, all the files are in WAV but for some reason it's saying the bitrate is 0 ( it's absolutely not ), Im going kinda crazy trying to fix this.
+
+Ok so apparantly the SD card isn't reading at all, I'm kinda suspecting that the CS pin I broke could be causing issues, I don't have a multimeter to test, but there is a SD card slot on the display for some reason I can try wiring into. That worked, and somehow it made the og port start working too?? idk, but I can confirm the playback and SD stuff works now!
+
+I left it for a bit and came back and the SD card stopped working again, idk why, it's the exact same code, exact same hardware setup and everything. 
+
+Spent the last hour fixing this again, all the buttons are properly wired too so I started testing the playlist stuff. Switching to the next song when the last one ends works fine, but skipping songs sometimes doesn't work, or sometimes leads to a bunch of really harsh static that doesn't go away. I think it has something to do with it not being able to read quickly enouch or something, so I'm going to try having it pause before switching songs so it doesn't interrupt anything. 
+
+I ended up doing something a bit more complicated than just pausing, but it seemed to work ( appaerntly the BT loop operates seeprately from main stuff so I queued the changes for whenever it gets to it and pause in the meantime ). Also, the issue with the SD card seems to be somehow related to having the secondary (unused) sd card slot wired up. I guess there's some passive componenets that help with the signals to the main reader, but in practice I'm just calling it the emotional support sd card reader. 
+
+deadline is today, and everything exept for the screen is working, so assuming I can get that configured right, it should be a pretty easy finish. so far it's only been showing a pure white screen though, so I can't really tell what the dealio is. The aliexpress listing had people complaining about a similar issue, so I hope I didn't get a bad unit. 
+
+I've tried all the basic libraries ( arduino GFX, tft_eSPI ) with a bunch of different configurations and I haven't been able to get any communication happening. I'm pretty sure whatever driver ( I think it's the st7789v ) I have doesn't actually use the MISO pin, so I cant get any output from the display exept for visual ( which is not going well ). 
+
+I spent the last couple hours trying to find a solution, and the closest I got was some very faint RGB noise showing up on the display. After that, the USB serial comms broke for some reason, so by the time I got that working again I just had to load up the mostly working firmware. I'm kinda dissapointed the display isn't working, but out of everything to break, it's still the least critical. 
+
+
+
+
+
 
 
 
