@@ -372,6 +372,10 @@ I've tried all the basic libraries ( arduino GFX, tft_eSPI ) with a bunch of dif
 
 I spent the last couple hours trying to find a solution, and the closest I got was some very faint RGB noise showing up on the display. After that, the USB serial comms broke for some reason, so by the time I got that working again I just had to load up the mostly working firmware. I'm kinda dissapointed the display isn't working, but out of everything to break, it's still the least critical. 
 
+Finally demoed!
+
+> Time spent in this massive block (thx wakatime): ~13hrs
+
 
 
 
